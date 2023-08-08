@@ -7,28 +7,27 @@
   
   .main_container {
     width: 522px;
-    height: 500px;
+    height: 240px;
     border: none;
     margin-left: 30%;
     margin-top: 100px;
   }
   
-  .box1:hover{
-     background-color: rgb(207, 240, 228);
-     border-color: rgb(11, 72, 52);
-  }
-
-  .box2:hover{
+  .selectedBox {
     background-color: rgb(207, 240, 228);
     border-color: rgb(11, 72, 52);
- }
-
- .box3:hover:hover{
-  background-color: rgb(207, 240, 228);
-  border-color: rgb(11, 72, 52);
-}
-
-
+  }
+  
+  .addtocart{
+    width: 522px;
+    padding: 10px;
+    height: 40px;
+    margin-top:10px;
+    background-color:rgb(5, 124, 84);
+    color:#fff;
+    border:none;
+  }
+  
   .horizontal_line {
     margin-top: 40px;
   }
@@ -51,13 +50,22 @@
     width: 522px;
     height: 80px;
     border: 1px solid rgb(185, 180, 180);
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 18px;
     display: flex;
-    align-items: center;
+    
   }
-
- 
+  
+  .box1_content {
+  
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+  }
+  
+  
+  
   
   .box1 input {
     width: 15px;
@@ -69,28 +77,32 @@
     accent-color: green;
   }
   
-  .box1_content {
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 180px;
+  input[name="radio2"] {
+    accent-color: green;
   }
+  
+  input[name="radio3"] {
+    accent-color: green;
+  }
+  
+  
   
   .box2 {
     width: 522px;
-    height: 200px;
+    height: 80px;
     border: 1px solid rgb(185, 180, 180);
     margin-top: 20px;
     padding: 18px;
     display: flex;
+    
   }
   
   .box2_content {
-
+  
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
-    
+  
   }
   
   .box3 {
@@ -100,53 +112,47 @@
     margin-top: 20px;
     padding: 18px;
     display: flex;
-    align-items: center;
+    
   }
   
   .box3 input {
     width: 15px;
     height: 15px;
     cursor: pointer;
-  }
-  
+   }
   
   
   .box3_content {
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 180px;
   }
-
-
-
-
-  .last_content{
-    margin-top:20px;
+  
+  .shiping-div {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
   }
-
- 
+  
   @media screen and (max-width: 600px) {
     .main_container {
       width: 90%;
       height: 100%;
       margin-top: 50px;
       margin-left: 10%;
-      margin-right: 10%; 
-    }
-    .horizontal_line {
-      margin-top: 40px;
-      width:85%;
-    }
-    
-    
-    .horizontal_line h2 {
-      font-size: 18px; 
+      margin-right: 10%;
+      display: block;
     }
    
-
+    .horizontal_line {
+      margin-top: 40px;
+      width: 96%;
+    }
+  
+    .horizontal_line h2 {
+      font-size: 18px;
+    }
+  
     .box1 {
       width: 420px;
       height: 80px;
@@ -154,33 +160,40 @@
       margin-top: 40px;
       padding: 18px;
       display: flex;
-      align-items: center;
+      
     }
-
+  
     .box1_content {
       margin-left: 20px;
       display: flex;
       justify-content: space-between;
-      gap: 180px;
+      margin-right:0px;
     }
-
+  
+    .md_screen{position: relative;
+      left: 100px;
+      bottom:20px;
+      }
+    .md_screen1{position: relative;
+      left: 80px;
+      bottom:20px;
+    }
+  
     .box2 {
       width: 420px;
-      height: 220px;
+      height: 80px;
       border: 1px solid rgb(185, 180, 180);
       margin-top: 20px;
       padding: 18px;
       display: flex;
     }
-    
-    .box2_content {
   
+    .box2_content {
       margin-left: 20px;
       display: flex;
       justify-content: space-between;
-      
     }
-    
+  
     .box3 {
       width: 420px;
       height: 80px;
@@ -188,49 +201,59 @@
       margin-top: 20px;
       padding: 18px;
       display: flex;
-      align-items: center;
+      
     }
+  
     .box3_content {
       margin-left: 20px;
       display: flex;
       justify-content: space-between;
       gap: 180px;
     }
-    .last_content{
-      margin-top:20px;
+  
+    .last_content {
+      margin-top: 20px;
       display: flex;
       justify-content: space-between;
       margin-right: 70px;
     }
   
-    .select_box{
-      display:flex;
-      
+    .select_box {
+      display: flex;
+  
     }
-    .most{ 
+  
+    .most {
       margin-left: -40px;
     }
-    .copyright{
-      margin-right:70px;
+  
+    .copyright {
+      margin-right: 10px;
+    }
+  
+    .rdo-btn-dv2{
+     margin-right: 15px;
+    }
+  
+    .addtocart {
+        width:97%;
     }
   }
-
-
+  
+  
   @media screen and (max-width: 400px) {
     .main_container {
       width: 90%;
       height: 100%;
       margin-top: 50px;
       margin-left: 2%;
-      margin-right: 10%; 
+      margin-right: 10%;
     }
   
-    
     .horizontal_line h2 {
-      font-size: 18px; 
+      font-size: 18px;
     }
-
-    
+  
     .box1 {
       width: 360px;
       height: 80px;
@@ -240,14 +263,14 @@
       display: flex;
       align-items: center;
     }
-
+  
     .box1_content {
       margin-right: 100px;
       display: flex;
       justify-content: space-between;
       gap: 120px;
     }
-
+  
     .box2 {
       width: 360px;
       height: 220px;
@@ -256,42 +279,66 @@
       padding: 18px;
       display: flex;
     }
-    
+  
     .box2_content {
   
       margin-left: 20px;
       display: flex;
       justify-content: space-between;
-      
+  
     }
-    
+    .cross-text {
+      color: #9F9F9F;
+      font-size: 13px;
+      align-self: end;
+      position: relative;
+      left: 24px;
+  }
+  
+  .cross-text::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      top: 41%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      width: 105%;
+      height: 0.5px;
+      background-color: #9F9F9F;
+  }
+  
     .box3 {
       width: 360px;
-      height: 80px;
+      height: 220px ;
       border: 1px solid rgb(185, 180, 180);
       margin-top: 20px;
       padding: 18px;
       display: flex;
-      align-items: center;
+      align-items:center;
+      text-align: top;
     }
+  
     .box3_content {
       margin-left: 20px;
       display: flex;
       justify-content: space-between;
       gap: 120px;
     }
-    .last_content{
-      margin-top:20px;
+  
+    .last_content {
+      margin-top: 20px;
       display: flex;
       justify-content: space-between;
       margin-right: 15px;
     }
   
-    .select_box{
-      display:flex;
-      
+    .select_box {
+      display: flex;
+  
     }
-    .most{ 
+  
+    .most {
       margin-left: -100px;
     }
+    
   }
